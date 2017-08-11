@@ -15,8 +15,9 @@ class Node {
 
 class Solution {
     //
-    static void levelOrder(Node root) {
-        //Write your code here
+    private static void levelOrder(Node root) {
+
+        //Queue is an interface
         Queue<Node> queue = new LinkedList();
         // enqueue current root
         queue.add(root);
@@ -38,7 +39,7 @@ class Solution {
     }
 
 
-    public static Node insert(Node root, int data) {
+    private static Node insert(Node root, int data) {
         if (root == null) {
             return new Node(data);
         } else {
